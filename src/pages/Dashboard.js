@@ -3,8 +3,9 @@ import moment from 'moment'
 import Header from '../components/Header/Header';
 import Sidebar from '../components/Sidebar/Sidebar';
 import BarCart from '../components/Chart/Chart';
+import Products from '../components/Products/Products';
 import DateRangeFilter from '../components/DateRangeFilter/DateRangeFilter';
-import { IoIosArrowDown, IoIosArrowUp, IoMdMore } from 'react-icons/io';
+import { IoIosArrowDown, IoIosArrowUp, IoMdMore, IoIosArrowRoundDown } from 'react-icons/io';
 
 import Calendar from '../assets/images/calendar.png';
 import Help from '../assets/images/help.png';
@@ -80,7 +81,7 @@ const Dashboard = () => {
           <div className="panel-summary">
             <div>
               <h2>Rp 3.600.000</h2>
-              <p><span>13.8%</span> last period in products sold</p>
+              <p><span><IoIosArrowRoundDown size={'1.3rem'} /> 13.8%</span> last period in products sold</p>
             </div>
             <img src={Cart} alt="Cart" />
           </div>
@@ -100,6 +101,7 @@ const Dashboard = () => {
               <h3>BEST SELLING SKU</h3>
               <IoMdMore size={'1.5rem'} />
             </div>
+            <Products />
           </div>
 
           <div className="card content-products">
@@ -107,6 +109,7 @@ const Dashboard = () => {
               <h3>TOP COMPETITOR SKU</h3>
               <IoMdMore size={'1.5rem'} />
             </div>
+            <Products />
           </div>
 
         </div>

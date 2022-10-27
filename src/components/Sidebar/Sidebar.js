@@ -1,9 +1,16 @@
+import { IoIosFolder, IoIosMenu } from 'react-icons/io';
 import './style.scss';
 
 const Sidebar = () => {
   return (
     <aside>
-      {/* <h1>Sidebar</h1> */}
+      <ul>
+        <li className="active"><IoIosMenu size={'2rem'}/></li>
+        <li><IoIosFolder size={'1.8rem'}/></li>
+        <li><IoIosFolder size={'1.8rem'}/></li>
+        <li><IoIosFolder size={'1.8rem'}/></li>
+        <li><IoIosFolder size={'1.8rem'}/></li>
+      </ul>
     </aside>
   )
 }
