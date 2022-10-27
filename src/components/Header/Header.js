@@ -1,5 +1,7 @@
 import Logo from '../../assets/images/logo.png';
 import User from '../../assets/images/profile.png';
+import { MdOutlineLogout } from "react-icons/md";
+
 import './style.scss';
 
 const Header = () => {
@@ -16,7 +18,7 @@ const Header = () => {
           </span>
           <img src={User} alt="User" />
         </div>
-        <span>Logout</span>
+        <span><MdOutlineLogout size={'1.3rem'} /></span>
       </div>
     </header>
   )

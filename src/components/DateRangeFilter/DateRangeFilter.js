@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 import "react-date-range/dist/styles.css";
 import "react-date-range/dist/theme/default.css";
-import DateRangePicker from "react-date-range";
+import { DateRangePicker } from "react-date-range";
 import { addDays, subDays } from "date-fns";
 
 const DateRangeFilter = ({ onChange }) => {
